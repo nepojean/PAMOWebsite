@@ -8,5 +8,5 @@ def run():
     html = templates.finalize(html, ".")
     util.writefile("../index.html", html)
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
     run()
