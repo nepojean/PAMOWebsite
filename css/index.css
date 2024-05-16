@@ -66,13 +66,15 @@
 
 
 .intro {
-	width: 80%;
+	width: 50%;
 	margin: 0 auto;
 	background-color: #FCFCD9;
 	padding: 0.8em;
 	border: 1px solid #BEB761;
 	text-align: left;
 }
+
+
 
 /*
 .intro div {
