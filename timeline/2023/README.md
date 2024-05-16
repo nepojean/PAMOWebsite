@@ -11,31 +11,31 @@ I am using VBA
  
 this is the HTML code snippet:
 
-<tr><td><a href="../../countries/KOR/.">Maroc</a></td><td align="right">1</td><td>5</td><td>4</td><td>3/td><td>2</td></tr>
+<tr><td><a href="../../countries/KOR/.">Morocco</a></td><td align="right">1</td><td>5</td><td>4</td><td>3/td><td>2</td></tr>
 
-I want top update the place where Maroc is written with column A data starting from A2.
+I want top update the place where Morocco is written with column A data starting from A2.
 
 I want to also update that place where number 1 is written so that it can increment.
 
 I want to update the place where 5 is written with the result of this formula performed on the data that is in another worksheet called Final ranking:
 
-=COUNTIFS(A:A, "Maroc",L:L, "Gold") 
-you will update Maroc each time to make it the current data in column A. 
+=COUNTIFS(A:A, "Morocco",L:L, "Gold") 
+you will update Morocco each time to make it the current data in column A. 
 
 I want to update the place where 4 is written with the result of this formula performed on the data that is in another worksheet called Final ranking:
 
-=COUNTIFS(A:A, "Maroc",L:L, "Silver") 
-you will update Maroc each time to make it the current data in column A. 
+=COUNTIFS(A:A, "Morocco",L:L, "Silver") 
+you will update Morocco each time to make it the current data in column A. 
 
 I want to update the place where 3 is written with the result of this formula performed on the data that is in another worksheet called Final ranking:
 
-=COUNTIFS(A:A, "Maroc",L:L, "Bronze") 
-you will update Maroc each time to make it the current data in column A. 
+=COUNTIFS(A:A, "Morocco",L:L, "Bronze") 
+you will update Morocco each time to make it the current data in column A. 
 
 I want to update the place where 2 is written with the result of this formula performed on the data that is in another worksheet called Final ranking:
 
-=COUNTIFS(A:A, "Maroc",L:L, "Certificate") 
-you will update Maroc each time to make it the current data in column A.
+=COUNTIFS(A:A, "Morocco",L:L, "Certificate") 
+you will update Morocco each time to make it the current data in column A.
 
 *********************************************************************
 *********************************************************************
