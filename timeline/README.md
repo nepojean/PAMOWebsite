@@ -8,7 +8,7 @@ I used the excel sheet available at the current Official website of PAMO.
 
 *********************************************************
 the prompt: 
-<tr><td>Nepo</td><td><a href="../../countries/Algeria/individual">Algeria</a></td><td align="right">1</td><td><img src="../../img/GOLD.png" width="9" height="9"> GOLD</td><td class = "girl"></td><td align="right">7</td><td align="right">6</td><td align="right">5</td><td align="right">4</td><td align="right">3</td><td align="right">2</td><td align="right">27</td></tr>
+<tr><td>Nepo</td><td><a href="../../countries/ALG/individual.html">Algeria</a></td><td align="right">1</td><td><img src="../../img/GOLD.png" width="9" height="9"> GOLD</td><td class = "girl"></td><td align="right">7</td><td align="right">6</td><td align="right">5</td><td align="right">4</td><td align="right">3</td><td align="right">2</td><td align="right">27</td></tr>
 
 consider that html template.
 I have too much data in my Microsoft excel sheet.
@@ -38,6 +38,7 @@ In order to meet the prompt above I do data cleaning by putting desired data whe
 
 *********************************************************************
 *********************************************************************
+Alt + f11 + insert > module > ... > run. and you are done :)
 The VBA code:
 
 Sub UpdateHTML()
@@ -95,4 +96,11 @@ I used this code in different columns column to get corresponding golds.
 
 Then after I concatenate the Column A which has name of the country with those columns.
 This makes it easy to read when editing the html.  
-******************************************************************************8
+******************************************************************************
+
+******************************************************************************
+This is the code for ranking stuffs. 
+
+******************************************************************************
+=RANK(K2, $K$2:$K$90, 0)
+******************************************************************************
