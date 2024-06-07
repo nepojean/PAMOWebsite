@@ -6,6 +6,26 @@
 <link href="../css/design.css" rel="stylesheet" type="text/css" />
 <link href="../css/print.css" rel="stylesheet" type="text/css" media="print" />
 <title>PAMO: Timeline</title>
+<style>
+    .members {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .member {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+    .member img {
+        width: 40%;
+        border-radius: 50%;
+    }
+    .post,
+    .name,
+    .birthplace {
+        margin-top: 10px;
+    }
+</style>
 <script>
 function showupcoming() {
   upcoming.style.display = '';
@@ -30,7 +50,7 @@ function showupcoming() {
         <li><a href="../countries/." class="">Countries</a></li>
         <li><a href="../search/." class="">Search</a></li>
         <li><a target="_blank" href="https://artofproblemsolving.com/community/c3228_pan_africa n">Problems</a></li>
-         <li><a href="../../committee/." class="">AMUPAMOC committee</a></li>
+         <li><a href="../../committee/." class="highlight">AMUPAMOC committee</a></li>
         <li><a href="../../imoparticipation/." class="">IMO participation</a></li>
         
          
@@ -38,11 +58,59 @@ function showupcoming() {
 </div>
 
 <div id="main">
-	<h2>AMUPAMOC committee members</h2>
-    <li>Elyacoubi</li>
-    <li>Liam Baker</li>
-    <li>Arun Shanmuganathan</li>
-    <li>Karam</li>
+    <br>
+	<h2 align = "center">AMUPAMOC committee members</h2>
+    <div class="members">
+        <div class="member">
+            <img src="../img/member1.jpg" alt="Member 1">
+            <div class="post" >Chairperson</div>
+            <div class="name">Nouzha El Yacoubi</div>
+            <div class="birthplace">(Morocco, North Africa)</div>
+        </div>
+        <div class="member">
+            <img src="../img/member2.jpg" alt="Member 2">
+            <div class="post">Executive Secretary</div>
+            <div class="name">Karam Aloui</div>
+            <div class="birthplace">(Tunisia, North Africa)</div>
+        </div>
+        <div class="member">
+            <img src="../img/member3.png" alt="Member 3">
+            <div class="post">Member & Advisor</div>
+            <div class="name">Sophie Dabo</div>
+            <div class="birthplace">(Senegal & France, African Diaspora)</div>
+        </div>
+        <div class="member">
+            <img src="../img/member4.jpg" alt="Member 4">
+            <div class="post">Member</div>
+            <div class="name">Liam Baker</div>
+            <div class="birthplace">(South Africa, Southern Africa)</div>
+        </div>
+        <div class="member">
+            <img src="../img/member5.jpg" alt="Member 5">
+            <div class="post">Member</div>
+            <div class="name">Jérôme Kablan Adou</div>
+            <div class="birthplace">(Côte d’Ivoire, West Africa)</div>
+        </div>
+        <div class="member">
+            <img src="../img/member6.jpg" alt="Member 6">
+            <div class="post">Member</div>
+            <div class="name">Arun Shanmuganathan</div>
+            <div class="birthplace">(Rwanda, Central Africa)</div>
+        </div>
+        <div class="member">
+            <img src="../img/member7.jpg" alt="Member 7">
+            <div class="post">Member</div>
+            <div class="name">Pogiso Itomeng</div>
+            <div class="birthplace">(Botswana, Southern Africa)</div>
+        </div>
+        <div class="member">
+            <img src="../img/member8.jpg" alt="Member 8">
+            <div class="post">Member</div>
+            <div class="name">Charles Ondunga</div>
+            <div class="birthplace">(Kenya, East Africa)</div>
+        </div>
+        
+    </div>
 
 </div>
 <div id="footer">
