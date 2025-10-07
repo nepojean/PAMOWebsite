@@ -81,18 +81,18 @@ form {
 
 select {
 	margin: 0em;
-	border: 1px solid #BEB761;
+	border: 1px solid #7abe61;
 	font-size: 0.9em;
 }
 
 input {
-	border: 1px solid #BEB761;
+	border: 1px solid #7abe61;
 	color: #0F3678;
 	text-decoration: none;
 }
 
 .btnSubmit {border: 1px solid #9F998E; font-size: 95%; cursor: pointer; background: #D4D0C8; padding: 0px 5px; overflow: visible; color: black}
-.inptText {border: 1px solid #BEB761; font-size: 95%;color: black}
+.inptText {border: 1px solid #7abe61; font-size: 95%;color: black}
 
 textarea:focus {background-color: #FFFF8B;}
 input[type="text"]:focus {background-color: #FFFF8B;}
@@ -124,8 +124,8 @@ a:active {
 
 hr {
 	border: 0;
-	color: #BEB761;
-	background-color: #BEB761;
+	color: #7abe61;
+	background-color: #7abe61;
 	height: 1px;
 	clear: both;
 }

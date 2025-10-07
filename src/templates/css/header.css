@@ -29,8 +29,8 @@
 	text-align: center;
 	padding: 0.5em 0 0.5em 0em;
 	background-color: white;
-	border-top: 1px dashed #BEB761;
-	border-bottom: 1px dashed #BEB761;
+	border-top: 1px dashed #7abe61;
+	border-bottom: 1px dashed #7abe61;
 	/* background-position: center;
 	background-image: url(imosmall.gif);
 	background-repeat: no-repeat; */
@@ -94,8 +94,8 @@
 
 #header #lang a, #header #lang a:visited
 {
-    color: #BEB761;
-    border: 1px solid #BEB761;
+    color: #7abe61;
+    border: 1px solid #7abe61;
     background-color: #fffacd;
     height: 3ex;
     width: 3ex;
@@ -127,8 +127,8 @@
 }
 
 #langForm a, #langForm a:visited
-{   color: #BEB761;
-    border: 1px solid #BEB761;
+{   color: #7abe61;
+    border: 1px solid #7abe61;
     background-color: #FFFACD;
     padding: 2px;
     position: relative;
@@ -153,8 +153,8 @@
 {
 	font-variant: small-caps;
 	font-size: 1.1em;
-    color: #BEB761;
-    border: 1px solid #BEB761;
+    color: #7abe61;
+    border: 1px solid #7abe61;
     background-color: #FFFACD;
     padding: 1px 1px;
     text-decoration: none;
@@ -175,7 +175,7 @@
 	font-variant: small-caps;
 	font-size: 1.1em;
     color: black;
-    border: 1px solid #BEB761;
+    border: 1px solid #7abe61;
     background-color: #f0e68c;
     padding: 1px 1px;
     text-decoration: none;

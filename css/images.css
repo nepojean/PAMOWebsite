@@ -6,7 +6,7 @@
 	margin-right: 1em;
 	margin-bottom: 1em;
 	background-color: #FCFCD9;
-	border: 1px solid #BEB761;
+	border: 1px solid #7abe61;
 }
 
 .contestant
@@ -22,7 +22,7 @@
 }
 
 .photo img {
-	border: 1px solid #BEB761;
+	border: 1px solid #7abe61;
 }
 
 .photo p {
@@ -37,11 +37,11 @@
 	padding: 0.5em;
 	margin-right: 2em;
 	background-color: #FCFCD9;
-	border: 1px solid #BEB761;
+	border: 1px solid #7abe61;
 }
 
 .pphoto img {
-	border: 1px solid #BEB761;
+	border: 1px solid #7abe61;
 	display : block;
 }
 
@@ -51,7 +51,7 @@
 	top: 1.5em;
 	margin: 0;
 	background-color: white;
-	border: 1px solid #BEB761;
+	border: 1px solid #7abe61;
 }
 
 .host-logo img {
@@ -84,7 +84,7 @@
 	margin: 0 5px 5px 0; 
 	padding: 3px;
 	background-color: #FCFCD9;
-	border: 1px solid #BEB761;
+	border: 1px solid #7abe61;
 }
 
 .tphoto img { 
@@ -93,5 +93,5 @@
   margin: auto;
   margin-bottom: -8px;
   padding: 0;
-  border : 1px solid #BEB761;
+  border : 1px solid #7abe61;
 }
