@@ -68,7 +68,7 @@
 	/* font-size: 110%; */
 	font-weight: bold;
 	background-color: #F9F9B5;
-	border: 1px solid #7abe61;
+	border: 1px solid #93bb84;
 }
 
 #main th.highlightUp
@@ -106,7 +106,7 @@
 
 #main td
 {
-	border: 1px solid #7abe61;
+	border: 1px solid #93bb84;
 }
 
 #main table .noBorder
@@ -160,22 +160,22 @@
 
 .doubleTopLine
 {
-	border-top: double 4px #7abe61;
+	border-top: double 4px #93bb84;
 }
 
 .doubleBottomLine
 {
-	border-bottom: double 4px #7abe61;
+	border-bottom: double 4px #93bb84;
 }
 
 .doubleLeftLine
 {
-	border-left: double 4px #7abe61 !important;
+	border-left: double 4px #93bb84 !important;
 }
 
 .doubleRightLine
 {
-	border-right: double 4px #7abe61 !important;
+	border-right: double 4px #93bb84 !important;
 }
 
 .subtitle
