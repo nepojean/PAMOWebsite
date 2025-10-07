@@ -67,7 +67,7 @@
 	padding: 0.5ex;
 	/* font-size: 110%; */
 	font-weight: bold;
-	background-color: #F9F9B5;
+	background-color: #93bb84;
 	border: 1px solid #93bb84;
 }
 
@@ -150,7 +150,7 @@
 
 #main table .no-sort
 {
-	color: #F9F9B5;
+	color: #93bb84;
 }
 
 #main tr .spacer, #main td .spacer
