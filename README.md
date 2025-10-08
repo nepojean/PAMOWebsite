@@ -29,3 +29,24 @@ Column N:
 )
 
 Then after getting the html code I use it in table representation. But now, I am going to use backend technology.
+
+I used the following code to get each country's data in a single year for Rwanda:
+
+=IF(B2="Rwanda",
+CONCATENATE(
+"<tr class="""">",
+"<td align=""center""><a href=""../../timeline/2024/."">2024</a></td>",
+"<td>", A2, "</td>",
+"<td align=""right"">", G2, "</td>",
+"<td align=""right"">", H2, "</td>",
+"<td align=""right"">", I2, "</td>",
+"<td align=""right"">", J2, "</td>",
+"<td align=""right"">", K2, "</td>",
+"<td align=""right"">", L2, "</td>",
+"<td align=""right"">", D2, "</td>",
+"<td align=""right"">", M2, "</td>",
+"<td><img src=""../../img/", E2, ".png"" width=""9"" height=""9""> ", E2, "</td>",
+"</tr>"
+),
+""
+)

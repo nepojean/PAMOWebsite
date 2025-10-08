@@ -27,12 +27,12 @@
 #main thead
 {
 	display: table-header-group;
-	background-color: #eee8aa;
+	background-color: #accca0;
 }
 
 #main thead a, #main thead a:hover, #main thead a:visited
 {
-	/* font-weight: normal; */
+	/* font-weight: normal; #93bb84 #ede8ab*/
 }
 
 #main tfoot a, #main tfoot a:hover, #main tfoot a:visited
@@ -55,7 +55,7 @@
 #main tfoot
 {
 	display: table-footer-group;
-	background-color: #fbedb0;
+	background-color: #accca0;
 	font-weight: bold;
 	color: black;
 }
@@ -101,7 +101,7 @@
 }
 #main tbody tr:nth-child(even)
 {
-	background-color: #F9F9DA;
+	background-color: #cde8c4;
 }
 
 #main td

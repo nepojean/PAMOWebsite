@@ -1,0 +1,24 @@
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+}
+.member {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+.member img {
+    width: 40%;
+    border-radius: 5%;
+}
+.post {
+    font-weight: bold;
+    font-size: 18px;
+}
+.name {
+    font-weight: bold;
+}
+.birthplace {
+    margin-top: 10px;
+}
