@@ -1,24 +1,57 @@
-
 .members {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 .member {
-    width: calc(25% - 20px);
-    margin: 10px;
+    width: 280px;
+    padding: 20px;
     text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 .member img {
-    width: 40%;
-    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0%;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
 }
+
 .post {
-    font-weight: bold;
+    color: #2c3e50;
+    font-weight: 600;
     font-size: 18px;
+    margin-bottom: 8px;
 }
+
 .name {
+    color: #34495e;
     font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
+
 .birthplace {
-    margin-top: 10px;
+    color: #7f8c8d;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.member {
+    margin: 50px;
 }
