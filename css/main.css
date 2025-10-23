@@ -140,3 +140,19 @@ a.pointer:hover
 {
   background-color  : #FF00FF;
 }
+
+.bottom-note {
+    position: fixed;
+    bottom: 20px;  /* Adjust this value to position above the footer */
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Verdana, Arial, sans-serif;
+    z-index: 100;
+    margin: 0 auto;
+    width: max-content;
+}

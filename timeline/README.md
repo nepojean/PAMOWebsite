@@ -8,7 +8,7 @@ I used the excel sheet available at the current Official website of PAMO.
 
 *********************************************************
 the prompt: 
-<tr><td>Nepo</td><td><a href="../../countries/ALG/individual.html">Algeria</a></td><td align="right">1</td><td><img src="../../img/GOLD.png" width="9" height="9"> GOLD</td><td class = "girl"></td><td align="right">7</td><td align="right">6</td><td align="right">5</td><td align="right">4</td><td align="right">3</td><td align="right">2</td><td align="right">27</td></tr>
+<tr><td>Nepo</td><td><a href="../../countries/ALG/individual.html">Algeria</a></td><td align="right">1</td><td><img src="../../img/gold.png" width="9" height="9"> GOLD</td><td class = "girl"></td><td align="right">7</td><td align="right">6</td><td align="right">5</td><td align="right">4</td><td align="right">3</td><td align="right">2</td><td align="right">27</td></tr>
 
 consider that html template.
 I have too much data in my Microsoft excel sheet.

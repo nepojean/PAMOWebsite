@@ -1,0 +1,35 @@
+.welcome {
+    text-align: center;
+}
+.logo {
+    width: 200px;            
+    margin: 20px;
+    height: auto;
+    display: inline-block;
+}
+
+.sponsors {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.pamo_logo {
+    width: 360px;
+    margin: 20px auto;
+    display: block;
+}
+
+.amu_logo {
+    width: 150px;
+    display: block;
+    margin: 0px auto;
+}
+
+.aoa_logo {
+    width: 180px;
+    display: block;
+    margin: 10px auto;
+}
