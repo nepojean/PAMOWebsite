@@ -143,16 +143,16 @@ a.pointer:hover
 
 .bottom-note {
     position: fixed;
-    bottom: 20px;  /* Adjust this value to position above the footer */
+    bottom: 25px;  /* Adjust this value to position above the footer */
     left: 0;
     right: 0;
     text-align: center;
     padding: 10px;
     background: #ffffff;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.15em;
     font-family: Verdana, Arial, sans-serif;
     z-index: 100;
     margin: 0 auto;
-    width: max-content;
+    width: 100%;
 }
