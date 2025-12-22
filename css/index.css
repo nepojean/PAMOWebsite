@@ -104,6 +104,6 @@ text-align: left;
 
 @media (max-width: 1000px) {
     #main {
-		min-width: 950px;
+		min-width: 1000px;
     }
 }
