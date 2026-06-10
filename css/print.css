@@ -15,31 +15,7 @@ html {
 	overflow: visible;
 }
 
-#header {
-  /*xborder: 1px solid red; */
-	position: relative;
-	margin: 0;
-	top: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	z-index: 5;
-	background-color: transparent;
-    height: auto;
-	display: none;
-}
 
-#header #sub {
-	display: none;
-}
-
-#header #lang {
-	display: none;
-}
-
-#sidebar {
-	display: none;
-}
     
 #main 
 {
@@ -123,3 +99,57 @@ display: none;
 {
      page-break-before: always; 
 }  
+
+.results-section {
+
+    margin-bottom: 40px;
+	margin-right: 40px;
+
+}
+
+/* Scroll container */
+
+.table-scroll {
+
+    max-height: 200px;
+
+    overflow-y: auto;
+
+    border: 1px solid #ddd;
+
+}
+
+/* Sticky section title */
+
+.results-section h3 {
+
+    position: sticky;
+
+    top: 0;
+
+    background: white;
+
+    z-index: 3;
+
+    margin: 0;
+
+    padding: 10px;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+/* Sticky table headers */
+
+.results-table thead th {
+
+    position: sticky;
+
+    top: 43px;
+
+    background: #f5f5f5;
+
+    z-index: 2;
+
+}
+

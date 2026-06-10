@@ -2,7 +2,7 @@
 
 #main table
 {
-	margin: 0.4em 0 1em 0em;
+	margin: 0.4em auto 1em auto;
 	font-size: 100%;
 	border-collapse: collapse;
 	empty-cells: show;
@@ -28,16 +28,6 @@
 {
 	display: table-header-group;
 	background-color: #accca0;
-}
-
-#main thead a, #main thead a:hover, #main thead a:visited
-{
-	/* font-weight: normal; #93bb84 #ede8ab*/
-}
-
-#main tfoot a, #main tfoot a:hover, #main tfoot a:visited
-{
-	/* font-weight: normal; */
 }
 
 .highlightUp a, .highlightDown a:hover
@@ -67,7 +57,7 @@
 	padding: 0.5ex;
 	/* font-size: 110%; */
 	font-weight: bold;
-	background-color: #93bb84;
+	background: linear-gradient(90deg, #eef8ed, #dcf0d9);
 	border: 1px solid #93bb84;
 }
 
@@ -95,13 +85,25 @@
 	margin: 0;
 }
 
+#main tbody tr.year-separator
+{
+	height: 0.8em;
+	background-color: transparent;
+}
+
+#main tbody tr.year-separator td
+{
+	border: none;
+	padding: 0;
+}
+
 #main tbody .imp
 {
 	background-color: #F9F9DA;
 }
 #main tbody tr:nth-child(even)
 {
-	background-color: #cde8c4;
+	background-color: rgb(221, 221, 221);
 }
 
 #main td
@@ -148,6 +150,30 @@
 	color: black;
 }
 
+#main thead th.sortable-header
+{
+	cursor: pointer;
+	user-select: none;
+}
+
+#main thead th.sortable-header:hover
+{
+	background-color: #7ba86f;
+	transition: background-color 0.2s ease;
+}
+
+#main thead th.sort-asc::after
+{
+	content: " ▲";
+	font-size: 0.8em;
+}
+
+#main thead th.sort-desc::after
+{
+	content: " ▼";
+	font-size: 0.8em;
+}
+
 #main table .no-sort
 {
 	color: #93bb84;
@@ -185,7 +211,7 @@
 
 .ssubtitle
 {
-	background-color: #93bb84;
+	background-color: #b1b5b0;
 }
 
 .treeView table
@@ -200,5 +226,3 @@
 	border: none !important;
 	padding: 0 0 0 3px !important;
 }
-
-.container 

@@ -5,12 +5,30 @@
  *  *  *  *  *  *  *  *  *  *  *  */
 
 #footer 
-{   border-top: 1px dashed #93bb84;
+{   border-top: 1px solid #93bb84;
 	border-bottom: 1px solid #93bb84;
-	background-color: #93bb84;
+	background-color: #f7fbf6;
+	border-radius: 10px 10px 0px 0px;
 	text-align: center;
 	padding: 0.2em;
 	font-size: 0.8em;
 	line-height: 2em;
 	white-space: nowrap;
+}
+
+#footer {
+	position: absolute;
+	overflow: hidden;
+	display: block;
+	bottom: 0;
+	left: 0; 
+	width: 100%;
+	height: 2em;
+	margin: 0;
+	z-index: 5;
+}
+
+/*set Each height of the footer */
+:root {
+    --footer-height: 3em;
 }

@@ -12,8 +12,16 @@ body {
 
 h1 {
 	margin: 0em;
-	font-size: 1.7em;
+	font-size: 2em;
 	font-variant: small-caps;
+}
+
+/* style the header PAMO word. */
+
+#h1 {
+	width: fit-content;
+    margin: 0 auto;
+	
 }
 
 h2 {
@@ -23,6 +31,7 @@ h2 {
 	padding: 0px;
 	margin: 0.5em 0 0.5em 0;
 	clear: both;
+    text-align: center;
 }
 
 h2 a {
@@ -45,7 +54,7 @@ h3 {
 	font-variant: small-caps;
 	font-size: 1.3em;
 	color: green;
-	text-align: left;
+	text-align: center;
 	margin: 0.5em 0em 0.5em 0em; 
 	clear: both;
 }
@@ -94,11 +103,6 @@ input {
 .btnSubmit {border: 1px solid #9F998E; font-size: 95%; cursor: pointer; background: #D4D0C8; padding: 0px 5px; overflow: visible; color: black}
 .inptText {border: 1px solid #93bb84; font-size: 95%;color: black}
 
-textarea:focus {background-color: #FFFF8B;}
-input[type="text"]:focus {background-color: #FFFF8B;}
-input[type="password"]:focus {background-color: #FFFF8B;}
-input[type="radio"] {border:none;}
-input[type="checkbox"] {border:none;}
 
 select[disabled="disabled"] { color:black; background-color:#FFFFE0;}
 select .disabled { color:black; background-color:#FFFFF2;}
