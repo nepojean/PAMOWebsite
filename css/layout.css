@@ -4,50 +4,59 @@
 
  *  *  *  *  *  *  *  *  *  *  *  */
 
+:root {
+    --header-height: 5rem;
+    --footer-height: 3rem;
+}
+
 html {
-	height: 100%;
-	max-height: 100%;
-	padding: 0;
-	margin: 0;
-	border: 0;
-	/* hide overflow: hidden from IE5/Mac */
-	/* \*/
-	overflow: hidden;
-	/* */
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow-x: hidden;
 }
 
 body {
-	height: 100%;
-	max-height: 100%;
-	overflow: hidden;
-	margin: 0em;
-	padding: 0em;
-	border: 0em;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    font-family: verdana, sans-serif;
+    padding-top: var(--header-height);
+    padding-bottom: var(--footer-height);
+    box-sizing: border-box;
 }
 
 
 #main {
-	position: absolute;
-	overflow: auto;
-	top: 6em;
-	right: 0;
-	bottom: 2em;
-	left: 12em;
-	z-index: 3;
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    min-height: 100%;
+    z-index: 3;
 }
 
 * html #main {
-	overflow: auto;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	max-height: 100%;
-	width: 100%;
-	z-index: 3;
-	border-top: 6em solid #FFFFF2;
-	border-bottom: 2em solid #FFFFF2;
-	border-left: 12em solid #FFFFF2;
+    overflow: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+@media (max-width: 860px) {
+    :root {
+        --header-height: 8rem;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --header-height: 9rem;
+    }
 }
