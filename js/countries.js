@@ -87,6 +87,14 @@ function sortTable(colIndex) {
                 aVal = a.hm;
                 bVal = b.hm;
                 break;
+            case 6: // National Website presence
+                aVal = a.websitePresent ? 1 : 0;
+                bVal = b.websitePresent ? 1 : 0;
+                break;
+            case 7: // PAMO Host string length
+                aVal = (a.hostYears || "").length;
+                bVal = (b.hostYears || "").length;
+                break;
             case 8: // # of Participation
                 aVal = a.participationCount;
                 bVal = b.participationCount;
@@ -99,12 +107,12 @@ function sortTable(colIndex) {
                 return 0;
         }
         
-        // Numeric comparison for medal counts
+        // Numeric comparison
         if (typeof aVal === 'number' && typeof bVal === 'number') {
             return currentSortDir === 'asc' ? aVal - bVal : bVal - aVal;
         }
         
-        // String comparison for code and country
+        // String comparison for code, country, and recent participation
         if (currentSortDir === 'asc') {
             return aVal.localeCompare(bVal);
         } else {
@@ -223,13 +231,25 @@ Promise.all([
             bronze: country.bronze,
             hm: country.hm,
             hostYears: hostCountries[country.name] ? hostCountries[country.name].join(", ") : "",
+            websitePresent: Boolean(countryWebsites[country.name]),
             participationCount: participationYears.length,
             recentParticipation: participationYears.length ? participationYears[participationYears.length - 1] : ""
         };
     });
     
-    // Sort countries by code initially
-    sortedCountries.sort((a, b) => a.code.localeCompare(b.code));
+    // Default sorting: gold, silver, bronze, hm, participations (all descending)
+    const medalSort = (a, b) => {
+        if (a.gold !== b.gold) return b.gold - a.gold;
+        if (a.silver !== b.silver) return b.silver - a.silver;
+        if (a.bronze !== b.bronze) return b.bronze - a.bronze;
+        if (a.hm !== b.hm) return b.hm - a.hm;
+        if (a.participationCount !== b.participationCount) return b.participationCount - a.participationCount;
+        return a.name.localeCompare(b.name);
+    };
+
+    sortedCountries.sort(medalSort);
+    currentSortColumn = 2;
+    currentSortDir = 'desc';
     
     // Store data globally for sorting
     tableData = sortedCountries;
@@ -261,16 +281,36 @@ Promise.all([
     // Add click listeners to sortable headers
     const headers = document.querySelectorAll('table thead th');
     headers.forEach((header, index) => {
-        // Make sortable columns (0=Code, 1=Country, 2=Gold, 3=Silver, 4=Bronze, 5=HM, 8=# of Participation, 9=Recent Participation)
-        if ([0, 1, 2, 3, 4, 5, 8, 9].includes(index)) {
+        // Make sortable columns (0=Code, 1=Country, 2=Gold, 3=Silver, 4=Bronze, 5=HM, 6=Website, 7=Host, 8=# of Participation, 9=Recent Participation)
+        if ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9].includes(index)) {
             header.style.cursor = 'pointer';
             header.classList.add('sortable-header');
             header.addEventListener('click', () => sortTable(index));
         }
     });
+
+    // Show default sort indicator on Gold column
+    headers.forEach(header => {
+        header.textContent = header.textContent.replace(/[↑↓↕]\s*$/, '') + '↕';
+    });
+    if (headers[2]) {
+        headers[2].textContent = headers[2].textContent.replace(/[↑↓↕]\s*$/, '') + '↓';
+    }
     
 })
 .catch(err => console.error("Error loading data:", err));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //initialize an empty array which will hold student's data.
@@ -291,8 +331,9 @@ fetch("../data/students.json")
 const searchInput = document.getElementById("searchInput");
 const resultsDiv = document.getElementById("results");
 
-
-
+if (!searchInput || !resultsDiv) {
+    console.error("One or more required elements not found");
+}
 
 // What happens when I am searching?
 

@@ -139,6 +139,41 @@ searchInput.addEventListener("input", function () {
 
 });
 
+
+// Initialize the home slideshow functionality
+
+function initHomeSlideshow() {
+    const slideshow = document.querySelector('.homestories.slideshow');
+    if (!slideshow) return;
+
+    const imgEl = slideshow.querySelector('img.storypic');
+    const prevBtn = slideshow.querySelector('.nav.prev');
+    const nextBtn = slideshow.querySelector('.nav.next');
+    if (!imgEl || !prevBtn || !nextBtn) return;
+
+    const slides = (slideshow.dataset.slides || imgEl.src)
+        .split(',')
+        .map(src => src.trim())
+        .filter(Boolean);
+
+    if (slides.length === 0) return;
+
+    let currentIndex = slides.indexOf(imgEl.getAttribute('src'));
+    if (currentIndex === -1) currentIndex = 0;
+
+    const showSlide = index => {
+        currentIndex = (index + slides.length) % slides.length;
+        imgEl.src = slides[currentIndex];
+        imgEl.alt = `PAMO slideshow image ${currentIndex + 1}`;
+    };
+
+    prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+    nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+}
+
+document.addEventListener('DOMContentLoaded', initHomeSlideshow);
+if (document.readyState !== 'loading') initHomeSlideshow();
+
 document.querySelector('.logo.aoa').onclick = function() {
     window.open('https://aoa.school', '_blank');
 }

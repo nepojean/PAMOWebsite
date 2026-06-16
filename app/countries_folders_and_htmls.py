@@ -13,15 +13,26 @@ def create_index_for_countries():
     print(f"Created {filepath}")
 
     html_template = """
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-<link href="../img/pamo_icon.ico" rel="shortcut icon" type="image/x-icon" />
-<link href="../css/design.css" rel="stylesheet" type="text/css" />
-<link href="../css/print.css" rel="stylesheet" type="text/css" media="print" />
-<title>PAMO: Countries</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Countries | PAMO</title>
+
+<meta name="description"
+      content="Official website of the Pan African Mathematics Olympiad (PAMO).">
+
+<link rel="icon" href="../img/pamo_icon.ico">
+
+<link rel="stylesheet" href="../css/design.css">
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/print.css" media="print">
+
 </head>
+
 <body>
 
     <header id="header">
@@ -36,6 +47,9 @@ def create_index_for_countries():
             <a href="../committee/.">AMUPAMOC Members</a> &bull;
             <a href="../imoparticipation/.">IMO Participation</a> &bull;
             <a href="../regulations/.">Regulations</a>
+        </div>
+        <div id="search-wrap">
+            <input type="text" id="searchInput" placeholder=" Student Search ..." aria-label="Search" />
         </div>
     </div>
 </header>
@@ -74,7 +88,7 @@ def create_index_for_countries():
 
     with open(filepath, "w") as myfile:
         myfile.write(html_template)
-    print(f"populated {filepath} with html code.")
+    print(f"populated or updated {filepath} with html code.")
 
 
 
@@ -126,14 +140,25 @@ def populate_htmls_in_subfolders():
     
     for country in all_countries:
         filepath = os.path.join(folder, country, "index.html")
-        html_content = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+        html_content = """
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-<link href="../../img/pamo_icon.ico" rel="shortcut icon" type="image/x-icon" />
-<link href="../../css/design.css" rel="stylesheet" type="text/css" />
-<link href="../../css/print.css" rel="stylesheet" type="text/css" media="print" />
-<title>PAMO: Countries</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Countries | PAMO</title>
+
+<meta name="description"
+      content="Official website of the Pan African Mathematics Olympiad (PAMO).">
+
+<link rel="icon" href="../../img/pamo_icon.ico">
+
+<link rel="stylesheet" href="../../css/design.css">
+<link rel="stylesheet" href="../../css/index.css">
+<link rel="stylesheet" href="../../css/print.css" media="print">
+
 </head>
 <body>
 
@@ -244,3 +269,5 @@ def populate_htmls_in_subfolders():
             myfile.write(html_content)
     print("done populating htmls in subfolders of country.")
 
+create_index_for_countries()
+populate_htmls_in_subfolders()
