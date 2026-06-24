@@ -1,4 +1,44 @@
 import json
+import csv
+
+# Code for changing csv file into json file. 
+#run the following function only once otherwise you'll overwrite your clean json file.
+def convert_students_csv_to_json():
+    data = []
+    with open('../data/students.csv', 'r', encoding='utf-8') as f:
+        csv_reader = csv.DictReader(f)
+        for row in csv_reader:
+            data.append(row)
+
+    with open('data/students.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2)
+
+    print("populated data/students.json successfully!")
+
+def convert_countries_csv_to_json():
+    data = []
+    with open('../data/countries.csv', 'r', encoding='utf-8') as file:
+        csv_reader = csv.DictReader(file)
+        for row in csv_reader:
+            data.append(row)
+    
+    with open('../data/countries.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2)
+    
+    print("################# \n populated data/countries.json successfully!\n#################")
+
+def convert_new_data_0_csv_to_json():
+    data = []
+    with open('../data/new_data_0.csv', 'r', encoding='utf-8') as file:
+        csv_reader = csv.DictReader(file)
+        for row in csv_reader:
+            data.append(row)
+    
+    with open('../data/new_stud_data_0.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2)
+    
+    print("################# \n populated data/new_stud_data_0.json successfully!\n#################")
+
 
 with open("../data/students.json", "r") as file:
     contents = json.load(file)
@@ -38,7 +78,7 @@ def proper_case():
         student["STATUS"] = student["STATUS"].title().strip()
         i += 1
     
-    print(f"there were {i} changes made overall.")
+    print(f"there were {i} Proper chase changes made overall.")
 
 # Check for misspelled countries in the data and print them out.
 

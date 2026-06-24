@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<link href="../../img/pamo_icon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="../../css/design.css" rel="stylesheet" type="text/css" />
+<link href="../../css/print.css" rel="stylesheet" type="text/css" media="print" />
+<title>PAMO Timeline</title>
+</head>
+<body>
+
+    <header id="header">
+    <div id="h1">
+        <h1><a href="../../.">PAMO</a></h1>
+    </div>
+    <div>
+        <div id="menu">&bull;
+            <a href="../../timeline/.">Timeline</a> &bull;
+            <a href="../../countries/.">Countries</a> &bull;
+            <a target="_blank" href="https://artofproblemsolving.com/community/c3228_pan_african">Problems</a> &bull;
+            <a href="../../committee/.">AMUPAMOC Members</a> &bull;
+            <a href="../../imoparticipation/.">IMO Participation</a> &bull;
+            <a href="../../regulations/.">Regulations</a>
+        </div>
+        <div id="search-wrap">
+            <input type="text" id="searchInput" placeholder=" Student Search ..." aria-label="Search" />
+        </div>
+    </div>
+</header>
+<div id="results" style="display: none;"></div>
+<div id="main">
+
+    <h2 id="competitionTitle">
+    </h2>
+    <!-- GENERAL INFORMATION -->
+
+    <section class="info-section">
+
+        <h3>General Information</h3>
+
+        <table class="info-table">
+
+            <tr>
+                <td><strong>Host City</strong></td>
+                <td id="hostCity"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Country</strong></td>
+                <td id="hostCountry"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Participating Countries</strong></td>
+                <td id="participatingCountries"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Contestants</strong></td>
+                <td id="contestantsCount"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Gold medals</strong></td>
+                <td id="goldCount"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Silver medals</strong></td>
+                <td id="silverCount"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Bronze medals</strong></td>
+                <td id="bronzeCount"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Honourable mentions</strong></td>
+                <td id="hmCount"></td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- INDIVIDUAL RESULTS -->
+
+    <section class="results-section">
+
+        <h3>Individual Results</h3>
+        <div class="table-scroll">
+            <table class="results-table">
+
+                <thead>
+                    <tr>
+                        <th>Rank <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Name <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Country <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P1 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P2 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P3 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P4 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P5 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P6 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Total <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Award</th>
+                        <th>PAMOG</th>
+                    </tr>
+                </thead>
+
+                <tbody id="officialTableBody">
+                </tbody>
+
+            </table>
+        </div>
+
+    </section>
+
+    <!-- UNOFFICIAL RESULTS -->
+
+    <section class="results-section">
+
+        <h3>Unofficial Participants</h3>
+        <div class="table-scroll">
+            <table class="results-table">
+
+                <thead>
+                    <tr>
+                        <th>Rank <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Name <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Country <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P1 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P2 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P3 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P4 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P5 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>P6 <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Total <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Award</th>
+                        <th>PAMOG</th>
+                    </tr>
+                </thead>
+
+                <tbody id="unofficialTableBody">
+                </tbody>
+
+            </table>
+        </div>
+
+    </section>
+
+    <!-- COUNTRY RANKING -->
+
+    <section class="results-section">
+
+        <h3>Country Ranking</h3>
+        <div class="table-scroll">
+            <table class="results-table">
+
+                <thead>
+                    <tr>
+                        <th>Rank <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Country <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Contestants <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Gold <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Silver <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Bronze <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>HM <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                        <th>Total <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+                    </tr>
+                </thead>
+
+                <tbody id="countryRankingBody">
+                </tbody>
+
+            </table>
+        </div>
+
+    </section>
+
+</div>
+<div id="footer">
+<a href="http://ipho-new.org/" target="_blank"></a>
+<a href="javascript:easteregg()" style="color: black;">&bull;</a>
+<b>Webmaster:</b>
+<a href="mailto:tech@africanolympiadfoundation.org">tech@africanolympiadfoundation.org</a>
+</div>
+
+<script src="../../js/timelineyears.js"></script>
+</body>
+</html>
+
+
