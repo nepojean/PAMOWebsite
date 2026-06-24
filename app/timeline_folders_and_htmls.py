@@ -13,15 +13,24 @@ def create_index_for_timeline():
 
     html_template = """
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <link href="../img/pamo_icon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="../css/design.css" rel="stylesheet" type="text/css" />
-    <link href="../css/print.css" rel="stylesheet" type="text/css" media="print" />
-    <title>PAMO Timeline</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Timeline | PAMO</title>
+
+<meta name="description"
+      content="Official website of the Pan African Mathematics Olympiad (PAMO).">
+
+<link rel="icon" href="../img/pamo_icon.ico">
+
+<link rel="stylesheet" href="../css/design.css">
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/print.css" media="print">
+
 </head>
 
 <body>
@@ -131,14 +140,24 @@ def populate_html_files_in_subfolders():
 
     html_content = """
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-<link href="../../img/pamo_icon.ico" rel="shortcut icon" type="image/x-icon" />
-<link href="../../css/design.css" rel="stylesheet" type="text/css" />
-<link href="../../css/print.css" rel="stylesheet" type="text/css" media="print" />
-<title>PAMO Timeline</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Timeline | PAMO</title>
+
+<meta name="description"
+      content="Official website of the Pan African Mathematics Olympiad (PAMO).">
+
+<link rel="icon" href="../img/pamo_icon.ico">
+
+<link rel="stylesheet" href="../../css/design.css">
+<link rel="stylesheet" href="../../css/index.css">
+<link rel="stylesheet" href="../../css/print.css" media="print">
+
 </head>
 <body>
 
@@ -333,4 +352,3 @@ def populate_html_files_in_subfolders():
             file.write(html_content)
             counter += 1
     print(f"Populated {counter} html files")
-
