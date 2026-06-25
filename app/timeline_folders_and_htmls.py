@@ -352,3 +352,4 @@ def populate_html_files_in_subfolders():
             file.write(html_content)
             counter += 1
     print(f"Populated {counter} html files")
+populate_html_files_in_subfolders()
