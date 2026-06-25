@@ -8194,7 +8194,7 @@
     "YEAR": "2022"
   },
   {
-    "NAME": "Warakoze Bel Amigisage",
+    "NAME": "Bel Ami Gisage Warakoze",
     "COUNTRY": "Rwanda",
     "CODE": "RWA",
     "RANK": "27",
@@ -15114,7 +15114,7 @@
   },
   {
     "NAME": "Veller Carl",
-    "COUNTRY": "South Africa ",
+    "COUNTRY": "South Africa",
     "CODE": "SAF",
     "RANK": "1",
     "AWARD": "Gold",
@@ -15148,7 +15148,7 @@
   },
   {
     "NAME": "Munik Melissa",
-    "COUNTRY": "South Africa ",
+    "COUNTRY": "South Africa",
     "CODE": "SAF",
     "RANK": "2",
     "AWARD": "Gold",
@@ -15182,7 +15182,7 @@
   },
   {
     "NAME": "Conradie Francoise",
-    "COUNTRY": "South Africa ",
+    "COUNTRY": "South Africa",
     "CODE": "SAF",
     "RANK": "4",
     "AWARD": "Silver",
@@ -15198,8 +15198,8 @@
     "YEAR": "2006"
   },
   {
-    "NAME": "Nzi Brou ",
-    "COUNTRY": "Ivory Coast ",
+    "NAME": "Nzi Brou",
+    "COUNTRY": "Ivory Coast",
     "CODE": "IVC",
     "RANK": "6",
     "AWARD": "Silver",
@@ -15249,7 +15249,7 @@
     "YEAR": "2006"
   },
   {
-    "NAME": "Triki Bassam ",
+    "NAME": "Triki Bassam",
     "COUNTRY": "Tunisia",
     "CODE": "TUN",
     "RANK": "7",
@@ -15283,7 +15283,7 @@
     "YEAR": "2006"
   },
   {
-    "NAME": "Medjigbodo Sonagnon Gildas ",
+    "NAME": "Medjigbodo Sonagnon Gildas",
     "COUNTRY": "Benin",
     "CODE": "BEN",
     "RANK": "11",
@@ -15301,7 +15301,7 @@
   },
   {
     "NAME": "Fenner Kylie",
-    "COUNTRY": "South Africa ",
+    "COUNTRY": "South Africa",
     "CODE": "SAF",
     "RANK": "12",
     "AWARD": "Silver",
@@ -15318,7 +15318,7 @@
   },
   {
     "NAME": "Hounkonnou Oswald Donna",
-    "COUNTRY": "Ivory Coast ",
+    "COUNTRY": "Ivory Coast",
     "CODE": "IVC",
     "RANK": "13",
     "AWARD": "Bronze",
@@ -15334,7 +15334,7 @@
     "YEAR": "2006"
   },
   {
-    "NAME": "Nyambre Serge Armand ",
+    "NAME": "Nyambre Serge Armand",
     "COUNTRY": "Burkina Faso",
     "CODE": "BFA",
     "RANK": "14",
@@ -15386,7 +15386,7 @@
   },
   {
     "NAME": "Soro Ousmane",
-    "COUNTRY": "Ivory Coast ",
+    "COUNTRY": "Ivory Coast",
     "CODE": "IVC",
     "RANK": "16",
     "AWARD": "Bronze",
@@ -15402,7 +15402,7 @@
     "YEAR": "2006"
   },
   {
-    "NAME": "Barra Ali ",
+    "NAME": "Barra Ali",
     "COUNTRY": "Burkina Faso",
     "CODE": "BFA",
     "RANK": "18",
@@ -15489,7 +15489,7 @@
   {
     "NAME": "Ahohuendo Florel Armel",
     "COUNTRY": "Benin",
-    "CODE": "BEN ",
+    "CODE": "BEN",
     "RANK": "23",
     "AWARD": "Honourable Mention",
     "PAMOG": "",
@@ -15521,7 +15521,7 @@
     "YEAR": "2006"
   },
   {
-    "NAME": "N'Daw Mamadou ",
+    "NAME": "N'Daw Mamadou",
     "COUNTRY": "Senegal",
     "CODE": "SEN",
     "RANK": "25",
@@ -15709,7 +15709,7 @@
   },
   {
     "NAME": "Lekpeli",
-    "COUNTRY": "Ivory Coast ",
+    "COUNTRY": "Ivory Coast",
     "CODE": "IVC",
     "RANK": "35",
     "AWARD": "",
@@ -15793,7 +15793,7 @@
     "YEAR": "2006"
   },
   {
-    "NAME": "Finnigan ",
+    "NAME": "Finnigan",
     "COUNTRY": "Zimbabwe",
     "CODE": "ZIM",
     "RANK": "40",
@@ -17630,7 +17630,7 @@
   },
   {
     "NAME": "Kira Michaela Dusterwald",
-    "COUNTRY": "South Africa ",
+    "COUNTRY": "South Africa",
     "CODE": "SAF",
     "RANK": "1",
     "AWARD": "Gold",
@@ -17749,7 +17749,7 @@
   },
   {
     "NAME": "Dalian Dhaneshwar SUNDER",
-    "COUNTRY": "South Africa ",
+    "COUNTRY": "South Africa",
     "CODE": "SAF",
     "RANK": "8",
     "AWARD": "SIlver",
@@ -17766,7 +17766,7 @@
   },
   {
     "NAME": "Seth Sashen DURAIS",
-    "COUNTRY": "South Africa ",
+    "COUNTRY": "South Africa",
     "CODE": "SAF",
     "RANK": "9",
     "AWARD": "SIlver",
@@ -17902,7 +17902,7 @@
   },
   {
     "NAME": "Albert Wandui Kamau",
-    "COUNTRY": "Kenya ",
+    "COUNTRY": "Kenya",
     "CODE": "KEN",
     "RANK": "15",
     "AWARD": "Bronze",
@@ -17936,7 +17936,7 @@
   },
   {
     "NAME": "Thalalolwazi Msutu",
-    "COUNTRY": "South Africa ",
+    "COUNTRY": "South Africa",
     "CODE": "SAF",
     "RANK": "19",
     "AWARD": "Honourable Mention",
@@ -17970,7 +17970,7 @@
   },
   {
     "NAME": "Gilbert Rono Kimutai",
-    "COUNTRY": "Kenya ",
+    "COUNTRY": "Kenya",
     "CODE": "KEN",
     "RANK": "20",
     "AWARD": "Honourable Mention",
@@ -17986,7 +17986,7 @@
     "YEAR": "2010"
   },
   {
-    "NAME": "Sofyane Kortli ",
+    "NAME": "Sofyane Kortli",
     "COUNTRY": "Tunisia",
     "CODE": "TUN",
     "RANK": "22",
@@ -18021,7 +18021,7 @@
   },
   {
     "NAME": "Kelvin Benson Maboko",
-    "COUNTRY": "Kenya ",
+    "COUNTRY": "Kenya",
     "CODE": "KEN",
     "RANK": "23",
     "AWARD": "Honourable Mention",
@@ -18039,7 +18039,7 @@
   {
     "NAME": "Ibrahima Coulibaly",
     "COUNTRY": "Mali",
-    "CODE": "MLI ",
+    "CODE": "MLI",
     "RANK": "23",
     "AWARD": "Honourable Mention",
     "PAMOG": "",
@@ -18106,7 +18106,7 @@
   },
   {
     "NAME": "Abigail Nthenya",
-    "COUNTRY": "Kenya ",
+    "COUNTRY": "Kenya",
     "CODE": "KEN",
     "RANK": "29",
     "AWARD": "",
@@ -18123,8 +18123,8 @@
   },
   {
     "NAME": "Nahilatou Dassari",
-    "COUNTRY": "Benin ",
-    "CODE": "BEN ",
+    "COUNTRY": "Benin",
+    "CODE": "BEN",
     "RANK": "30",
     "AWARD": "",
     "PAMOG": "",
@@ -18139,8 +18139,8 @@
     "YEAR": "2010"
   },
   {
-    "NAME": "Yusupha Bojang ",
-    "COUNTRY": "Gambia ",
+    "NAME": "Yusupha Bojang",
+    "COUNTRY": "Gambia",
     "CODE": "GMB",
     "RANK": "31",
     "AWARD": "",
@@ -18157,7 +18157,7 @@
   },
   {
     "NAME": "Ibrahima Thiero",
-    "COUNTRY": "Mali ",
+    "COUNTRY": "Mali",
     "CODE": "MLI",
     "RANK": "32",
     "AWARD": "",
@@ -18173,8 +18173,8 @@
     "YEAR": "2010"
   },
   {
-    "NAME": "Ladji Yaya Bengaly ",
-    "COUNTRY": "Mali ",
+    "NAME": "Ladji Yaya Bengaly",
+    "COUNTRY": "Mali",
     "CODE": "MLI",
     "RANK": "33",
     "AWARD": "",
@@ -18191,7 +18191,7 @@
   },
   {
     "NAME": "Fatou Gassama",
-    "COUNTRY": "Gambia ",
+    "COUNTRY": "Gambia",
     "CODE": "GMB",
     "RANK": "33",
     "AWARD": "",
@@ -18326,7 +18326,7 @@
     "YEAR": "2010"
   },
   {
-    "NAME": "Kiswendsida Denis Kabore ",
+    "NAME": "Kiswendsida Denis Kabore",
     "COUNTRY": "Burkina Faso",
     "CODE": "BFA",
     "RANK": "",

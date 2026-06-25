@@ -219,3 +219,12 @@ def clean_hM():
             counter += 1
     print(f"Finished cleaning. Corrected {counter} entries.")
 
+#trim everything in the json file.
+def trim_all():
+    counter = 0
+    for student in contents:
+        for key in student:
+            if isinstance(student[key], str):
+                student[key] = student[key].strip()
+                counter += 1
+    print(f"Finished trimming. Trimmed {counter} entries.")

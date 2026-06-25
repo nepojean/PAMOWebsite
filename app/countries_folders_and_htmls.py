@@ -210,6 +210,7 @@ def populate_htmls_in_subfolders():
         <th>Total <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
         <th>Rank <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
         <th>Award <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
+        <th>PAMOG <span style="font-size: 80%; opacity: 0.6;">↕</span></th>
     </tr>
     </thead>
     <tbody></tbody>
@@ -269,5 +270,4 @@ def populate_htmls_in_subfolders():
             myfile.write(html_content)
     print("done populating htmls in subfolders of country.")
 
-create_index_for_countries()
 populate_htmls_in_subfolders()

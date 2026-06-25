@@ -76,8 +76,13 @@ async function populateCountryTable() {
         
         sections.forEach((section, index) => {
             const isOfficial = index === 0; // First section is official
-            const tbody = section.querySelector('table tbody');
-            if (!tbody) return;
+            const table = section.querySelector('table');
+            const tbody = table?.querySelector('tbody');
+            if (!tbody || !table) return;
+
+            const headerFields = Array.from(table.querySelectorAll('thead th'))
+                .map(th => th.textContent.trim().replace(/[↑↓↕]/g, '').trim());
+            const separatorColspan = Math.max(headerFields.length, 1);
 
             // Filter students by status
             const filteredStudents = countryStudents.filter(student => {
@@ -95,35 +100,58 @@ async function populateCountryTable() {
                 if (previousYear !== null && student.YEAR !== previousYear) {
                     const separatorRow = document.createElement('tr');
                     separatorRow.className = 'year-separator';
-                    separatorRow.innerHTML = '<td colspan="11" style="background-color: white;"></td>';
+                    separatorRow.innerHTML = `<td colspan="${separatorColspan}" style="background-color: white;"></td>`;
                     tbody.appendChild(separatorRow);
                 }
 
                 const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td><a href="../../timeline/${student.YEAR}">${student.YEAR}</a></td>
-                    <td>${student.NAME}</td>
-                    <td>${student.P1}</td>
-                    <td>${student.P2}</td>
-                    <td>${student.P3}</td>
-                    <td>${student.P4}</td>
-                    <td>${student.P5}</td>
-                    <td>${student.P6}</td>
-                    <td><strong>${student.TOTAL}</strong></td>
-                    <td>${student.RANK}</td>
-                    <td>${student.AWARD}</td>
-                `;
+                row.innerHTML = buildCountryRow(student, headerFields);
                 tbody.appendChild(row);
                 previousYear = student.YEAR;
             });
             
             // Add sorting functionality to headers
-            addTableSorting(section.querySelector('table'));
+            addTableSorting(table);
         });
 
     } catch (error) {
         console.error('Error loading country data:', error);
     }
+}
+
+function buildCountryRow(student, headerFields) {
+    const normalizeKey = header => header
+        .replace(/[↑↓↕]/g, '')
+        .replace(/\s*\(.*\)$/, '')
+        .trim()
+        .replace(/\s+/g, '_')
+        .replace(/[^\w_]/g, '')
+        .toUpperCase();
+
+    const fieldMap = {
+        'YEAR': `<td><a href="../../timeline/${student.YEAR}">${student.YEAR}</a></td>`,
+        'CONTESTANT': `<td>${student.NAME}</td>`,
+        'P1': `<td>${student.P1}</td>`,
+        'P2': `<td>${student.P2}</td>`,
+        'P3': `<td>${student.P3}</td>`,
+        'P4': `<td>${student.P4}</td>`,
+        'P5': `<td>${student.P5}</td>`,
+        'P6': `<td>${student.P6}</td>`,
+        'TOTAL': `<td><strong>${student.TOTAL}</strong></td>`,
+        'RANK': `<td>${student.RANK}</td>`,
+        'AWARD': `<td>${student.AWARD}</td>`,
+        'PAMOG': `<td>${student.PAMOG}</td>`
+    };
+
+    const rowCells = headerFields.map(header => {
+        const key = normalizeKey(header);
+        if (fieldMap[key]) {
+            return fieldMap[key];
+        }
+        return `<td>${student[key] ?? ''}</td>`;
+    });
+
+    return rowCells.join('');
 }
 
 // Add sorting functionality to table headers
@@ -229,13 +257,14 @@ function addTableSorting(table) {
                 // Even click: Restore original order with separators
                 tbody.innerHTML = '';
                 let previousYear = null;
+                const separatorColspan = Math.max(table.querySelectorAll('thead th').length, 1);
                 
                 originalOrder.forEach(item => {
                     // Add separator if year changed
                     if (previousYear !== null && item.year !== previousYear) {
                         const separatorRow = document.createElement('tr');
                         separatorRow.className = 'year-separator';
-                        separatorRow.innerHTML = '<td colspan="11" style="background-color: white;"></td>';
+                        separatorRow.innerHTML = `<td colspan="${separatorColspan}" style="background-color: white;"></td>`;
                         tbody.appendChild(separatorRow);
                     }
                     tbody.appendChild(item.element.cloneNode(true));
