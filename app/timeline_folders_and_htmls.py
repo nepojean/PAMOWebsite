@@ -174,9 +174,9 @@ def populate_html_files_in_subfolders():
             <a href="../../imoparticipation/.">IMO Participation</a> 
             <a href="../../regulations/.">Regulations</a>
         </div>
-        <div id="search-wrap">
+        <!-- <div id="search-wrap">
             <input type="text" id="searchInput" placeholder=" Student Search ..." aria-label="Search" />
-        </div>
+        </div> -->
     </div>
 </header>
 <div id="results" style="display: none;"></div>
