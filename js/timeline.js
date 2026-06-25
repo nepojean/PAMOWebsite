@@ -334,3 +334,35 @@ searchInput.addEventListener("input", function () {
     }
 
 });
+
+/* Sync CSS --header-height variable with actual header height
+   so body padding always keeps content below the fixed header. */
+(function syncHeaderHeight(){
+    const header = document.getElementById('header');
+    if (!header) return;
+
+    const setVar = () => {
+        const h = header.getBoundingClientRect().height || 0;
+        document.documentElement.style.setProperty('--header-height', Math.ceil(h) + 'px');
+    };
+
+    let t = null;
+    const debounced = () => {
+        clearTimeout(t);
+        t = setTimeout(setVar, 100);
+    };
+
+    // run initially
+    setVar();
+
+    window.addEventListener('resize', debounced);
+    window.addEventListener('orientationchange', debounced);
+
+    // observe mutations inside header
+    const mo = new MutationObserver(debounced);
+    mo.observe(header, { childList: true, subtree: true, characterData: true });
+
+    // also update after images/fonts load
+    window.addEventListener('load', setVar);
+    document.addEventListener('DOMContentLoaded', setVar);
+})();

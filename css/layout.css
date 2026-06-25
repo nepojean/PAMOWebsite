@@ -60,3 +60,22 @@ body {
         --header-height: 9rem;
     }
 }
+
+/* Extra spacing for very small screens to avoid header overlap */
+@media (max-width: 754px) {
+    :root {
+        --header-height: 10rem;
+    }
+}
+
+/* when header stacks with search below menu, increase body top padding */
+@media (max-width: 1400px) {
+    :root {
+        --header-height: 9rem;
+    }
+}
+
+/* smooth transition when header height changes */
+body {
+    transition: padding-top 180ms ease-in-out;
+}

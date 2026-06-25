@@ -39,12 +39,12 @@ def create_index_for_timeline():
         <h1><a href="../.">PAMO</a></h1>
     </div>
     <div>
-        <div id="menu">&bull;
-            <a href="../timeline/.">Timeline</a> &bull;
-            <a href="../countries/.">Countries</a> &bull;
-            <a target="_blank" href="https://artofproblemsolving.com/community/c3228_pan_african">Problems</a> &bull;
-            <a href="../committee/.">AMUPAMOC Members</a> &bull;
-            <a href="../imoparticipation/.">IMO Participation</a> &bull;
+        <div id="menu">
+            <a href="../timeline/.">Timeline</a> 
+            <a href="../countries/.">Countries</a> 
+            <a target="_blank" href="https://artofproblemsolving.com/community/c3228_pan_african">Problems</a> 
+            <a href="../committee/.">AMUPAMOC Members</a> 
+            <a href="../imoparticipation/.">IMO Participation</a> 
             <a href="../regulations/.">Regulations</a>
         </div>
         <div id="search-wrap">
@@ -76,7 +76,7 @@ def create_index_for_timeline():
     
     <div id="footer">
         <a href="http://ipho-new.org/" target="_blank"></a>
-        <a href="javascript:easteregg()" style="color: black;">&bull;</a>
+        <a href="javascript:easteregg()" style="color: black;"></a>
         <b>Webmaster:</b>
         <a href="mailto:tech@africanolympiadfoundation.org">tech@africanolympiadfoundation.org</a>
     </div>
@@ -166,12 +166,12 @@ def populate_html_files_in_subfolders():
         <h1><a href="../../.">PAMO</a></h1>
     </div>
     <div>
-        <div id="menu">&bull;
-            <a href="../../timeline/.">Timeline</a> &bull;
-            <a href="../../countries/.">Countries</a> &bull;
-            <a target="_blank" href="https://artofproblemsolving.com/community/c3228_pan_african">Problems</a> &bull;
-            <a href="../../committee/.">AMUPAMOC Members</a> &bull;
-            <a href="../../imoparticipation/.">IMO Participation</a> &bull;
+        <div id="menu">
+            <a href="../../timeline/.">Timeline</a> 
+            <a href="../../countries/.">Countries</a> 
+            <a target="_blank" href="https://artofproblemsolving.com/community/c3228_pan_african">Problems</a> 
+            <a href="../../committee/.">AMUPAMOC Members</a> 
+            <a href="../../imoparticipation/.">IMO Participation</a> 
             <a href="../../regulations/.">Regulations</a>
         </div>
         <div id="search-wrap">
@@ -334,7 +334,7 @@ def populate_html_files_in_subfolders():
 </div>
 <div id="footer">
 <a href="http://ipho-new.org/" target="_blank"></a>
-<a href="javascript:easteregg()" style="color: black;">&bull;</a>
+<a href="javascript:easteregg()" style="color: black;"></a>
 <b>Webmaster:</b>
 <a href="mailto:tech@africanolympiadfoundation.org">tech@africanolympiadfoundation.org</a>
 </div>

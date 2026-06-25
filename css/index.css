@@ -1,7 +1,7 @@
 ﻿
 :root {
     --footer-height: 3rem;
-    --header-height: 6.5rem;
+    --header-height: 5rem;
 }
 
 /* style for each body*/
@@ -10,6 +10,35 @@ html, body {
     min-height: 100%;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 860px) {
+    :root {
+        --header-height: 8rem;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --header-height: 9rem;
+    }
+}
+
+@media (max-width: 754px) {
+    :root {
+        --header-height: 10rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    :root {
+        --header-height: 9rem;
+    }
+}
+
+/* ensure the body padding transition is available in this file too */
+body {
+    transition: padding-top 180ms ease-in-out;
 }
 
 body {
@@ -269,4 +298,69 @@ text-align: left;
     .homestories > div {
         flex: 1 1 100%;
     }
+}
+
+/* Regulations page specific styles */
+#main.regulations {
+    max-width: 960px;
+    margin: 1.25rem auto;
+    padding: 1.5rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f7fbf6 100%);
+    border-radius: 14px;
+    border: 1px solid #e6efe3;
+    box-shadow: 0 10px 30px rgba(23, 63, 44, 0.06);
+    text-align: left;
+}
+
+.regulations h2 {
+    font-size: 1.6rem;
+    color: #132f26;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: -0.5px;
+}
+
+.regulations h3 {
+    font-size: 1.05rem;
+    color: #22543a;
+    margin: 1rem 0 0.5rem;
+    padding-left: 0.65rem;
+    border-left: 4px solid #d3e9d3;
+    font-weight: 700;
+}
+
+.regulations p,
+.regulations ul {
+    color: #1f3b30;
+    font-size: 1rem;
+}
+
+.regulations ul {
+    margin: 0.5rem 0 1rem 1rem;
+    padding-left: 1rem;
+}
+
+.regulations li {
+    margin-bottom: 0.45rem;
+}
+
+.regulations .note {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #385844;
+    background: #f2faf3;
+    border: 1px solid #e2efe2;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+    #main.regulations {
+        padding: 1rem;
+        margin: 0.75rem;
+        border-radius: 10px;
+    }
+
+    .regulations h2 { font-size: 1.4rem; }
+    .regulations h3 { font-size: 1rem; }
 }

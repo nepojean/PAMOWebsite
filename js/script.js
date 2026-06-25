@@ -174,6 +174,37 @@ function initHomeSlideshow() {
 document.addEventListener('DOMContentLoaded', initHomeSlideshow);
 if (document.readyState !== 'loading') initHomeSlideshow();
 
-document.querySelector('.logo.aoa').onclick = function() {
-    window.open('https://aoa.school', '_blank');
-}
+// The AOA tile already contains an anchor linking to aoa.school in the HTML.
+// No automatic window.open on load to avoid unwanted popups.
+
+/* Sync CSS --header-height variable with actual header height
+   so body padding always keeps content below the fixed header. */
+(function syncHeaderHeight(){
+    const header = document.getElementById('header');
+    if (!header) return;
+
+    const setVar = () => {
+        const h = header.getBoundingClientRect().height || 0;
+        document.documentElement.style.setProperty('--header-height', Math.ceil(h) + 'px');
+    };
+
+    let t = null;
+    const debounced = () => {
+        clearTimeout(t);
+        t = setTimeout(setVar, 100);
+    };
+
+    // run initially
+    setVar();
+
+    window.addEventListener('resize', debounced);
+    window.addEventListener('orientationchange', debounced);
+
+    // observe mutations inside header
+    const mo = new MutationObserver(debounced);
+    mo.observe(header, { childList: true, subtree: true, characterData: true });
+
+    // also update after images/fonts load
+    window.addEventListener('load', setVar);
+    document.addEventListener('DOMContentLoaded', setVar);
+})();
